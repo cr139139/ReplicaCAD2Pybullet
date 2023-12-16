@@ -11,8 +11,12 @@ This is a Python library for converting RelicaCAD datasets to be able to be impo
 git lfs install
 git clone https://huggingface.co/datasets/ai-habitat/ReplicaCAD_dataset
 ```
-   
-2. Clone this repo and run the following code
+2. Clone this repo and install requirements
+```terminal
+git clone https://github.com/cr139139/ReplicaCAD2Pybullet.git
+pip install -r requirements.txt
+```
+3. Run the following code
 ```terminal
 python convert.py --input {ReplicaCAD path} --output {desired export path} --viz True --viz_path {ReplicaCAD config scene json path}
 ```
