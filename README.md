@@ -2,6 +2,8 @@
 
 This is a Python library for converting RelicaCAD datasets to be able to be imported into the Pybullet environment.
 
+![alt text](https://github.com/cr139139/ReplicaCAD2Pybullet/blob/main/replicacad_in_pybullet.gif)
+
 ## Usage
 
 1. Install [ReplicaCAD datasets](https://huggingface.co/datasets/ai-habitat/ReplicaCAD_dataset)
