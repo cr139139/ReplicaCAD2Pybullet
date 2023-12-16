@@ -186,11 +186,11 @@ def static_convex_decomposition(output_path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', type=str, required=False, default='ReplicaCAD_dataset')
-    parser.add_argument('--output', type=str, required=False, default='ReplicaCAD_urdf')
+    parser.add_argument('--input', type=str, required=False, default='../ReplicaCAD_dataset')
+    parser.add_argument('--output', type=str, required=False, default='../ReplicaCAD_urdf')
     parser.add_argument('--viz', type=bool, required=False, default=True)
     parser.add_argument('--viz_path', type=str, required=False,
-                        default='./ReplicaCAD_dataset/configs/scenes/apt_0.scene_instance.json')
+                        default='../ReplicaCAD_dataset/configs/scenes/apt_0.scene_instance.json')
     args = parser.parse_args()
 
     input_path = args.input
@@ -228,5 +228,5 @@ if __name__ == "__main__":
     print('__________________________')
 
     if args.viz:
-        from ReplicaCAD2Pybullet.ReplicaCAD_load_pybullet import load_env_from_json
+        from ReplicaCAD_load_pybullet import load_env_from_json
         load_env_from_json(args.viz_path, output_path)
